@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Hide Recent Tweets",
+	"description": "__MSG_appDesc__",
+	"default_locale": "en",
+	"version": "1.0.0",
+	"icons": {
+		"48": "icon-48.png",
+		"96": "icon-96.png"
+	},
+	"applications": {
+		"gecko": {
+			"id": "hide-recent-tweets@devattendant.de"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://twitter.com/*"],
+			"css": ["hide-recent-tweets.css"]
+		}
+	]
+}
